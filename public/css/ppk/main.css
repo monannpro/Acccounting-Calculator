@@ -1,0 +1,57 @@
+main {
+    font-family: 'Calibri', sans-serif;
+}
+
+main ul {
+    list-style: none;
+    font-size: 25px;
+    line-height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+main ul span {
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+main ul input{
+    margin: 10px;
+    height: 30px;
+    width: 150px;
+}
+
+main li {
+    display: flex;
+    align-items: center;
+    margin-right:100px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+main li:nth-child(odd){
+    background-color: #EEEEEE;
+}
+
+main li:nth-child(even){
+    background-color: #DDDDDD;
+}
+
+main form {
+    position: relative;
+}
+main button {
+    position: absolute;
+    right: 150px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    background: #DDDDDD;
+    border-color: #EEEEEE;
+}
+
+main button:hover {
+    background: #EEEEEE;
+}
+
+

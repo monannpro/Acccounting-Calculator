@@ -9,8 +9,42 @@
     <meta name="creator" content="Monika Prokorym">
     <title>Kalkulator wpłat do PPK</title>
     <script src="https://kit.fontawesome.com/0d7ba2eb93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/ppk/header.css">
+    <link rel="stylesheet" href="../css/ppk/main.css">
+    <link rel="stylesheet" href="../css/ppk/style.css">
+    <link rel="stylesheet" href="../css/ppk/footer.css">
+    <link rel="stylesheet" href="../css/ppk/aside.css">
 </head>
 <body>
-<h1>Kalkulator wpłat do PPK</h1>
+<header>
+<p class="title">Kalkulator wpłat do PPK</p>
+</header>
+<main>
+    <div>
+        <form>
+            <ul>
+                <li><span>Kwota wynagrodzenia:</span><input type="number" id="ppk1" step="0.01" required>zł</li>
+                <li><span>Wpłata podstawowa finansowana przez uczestnika PPK:</span><input type="number" id="ppk2" step="0.01"required>%</li>
+                <li><span>Wpłata podstawowa finansowana przez podmiot zatrudniający:</span><input type="number" id="ppk3" step="0.01" required>%</li>
+                <li><span>Wpłata dodatkowa finansowana przez uczestnika PPK:</span><input type="number" id="ppk4" step="0.01" required>%</li>
+                <li><span>Wpłata dodatkowa finansowana przez podmiot zatrudniający:</span><input type="number" id="ppk5" step="0.01" required>%</li>
+            </ul>
+            <span><button type="submit">Oblicz</button></span>
+        </form>
+    </div>
+</main>
+<aside>
+    <div class="hidden">
+        <ul>
+            <li>Uczestnik PPK:</li>
+            <li>Podmiot zatrudniający:</li>
+            <li>Łącznie:</li>
+        </ul>
+    </div>
+</aside>
+<footer>
+    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
+</footer>
 </body>
 </html>

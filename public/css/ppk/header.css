@@ -1,0 +1,11 @@
+header {
+    font-family: 'Calibri', sans-serif;
+}
+
+header .title{
+    font-size: 50px;
+}
+
+p{
+    margin-left: 35px;
+}

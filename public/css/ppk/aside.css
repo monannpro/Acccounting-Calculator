@@ -1,0 +1,14 @@
+aside {
+    font-family: 'Calibri', sans-serif;
+}
+
+aside ul {
+    list-style: none;
+    font-size: 35px;
+    line-height: 80px;
+    margin: 50px;
+}
+
+aside .hidden{
+   /* display: none; */
+}

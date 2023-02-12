@@ -1,0 +1,28 @@
+footer {
+    font-family: 'Calibri', sans-serif;
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+footer a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+footer .edit {
+    position:absolute;
+    right: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer .back {
+    position:absolute;
+    left: 10px;
+    font-size: 20px;
+    padding: 10px;
+}

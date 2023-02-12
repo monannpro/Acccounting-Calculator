@@ -12,10 +12,6 @@ ul {
     line-height: 100px;
 }
 
-a:link {
-    color: black;
-}
-
 a:hover{
     color: black;
     text-decoration: underline;
