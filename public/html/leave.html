@@ -9,8 +9,40 @@
     <meta name="creator" content="Monika Prokorym">
     <title>Kalkulator urlopu</title>
     <script src="https://kit.fontawesome.com/0d7ba2eb93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/ppk_leave_calculator/aside.css">
+    <link rel="stylesheet" href="../css/ppk_leave_calculator/footer.css">
+    <link rel="stylesheet" href="../css/ppk_leave_calculator/header.css">
+    <link rel="stylesheet" href="../css/ppk_leave_calculator/main.css">
+    <link rel="stylesheet" href="../css/ppk_leave_calculator/style.css">
 </head>
 <body>
-<h1>Kalkulator urlopu</h1>
+<header>
+    <p class="title">Kalkulator urlopu</p>
+</header>
+<main>
+    <div>
+        <form>
+            <ul>
+                <li><span>Okres zatrudnienia w bieżącym roku</span>od:<input type="date" id="from-date" required>do:<input type="date" id="to-date" required></li>
+                <li><span>Wymiar czasu pracy:</span><input type="number" id="num1" step="1"required>/<input type="number" id="num2" step="1"required></li>
+                <li><span>Wymiar roczny urlopu dla pełnego etatu:</span><input type="number" id="days" step="1" required>dni</li>
+                <li><span>Obowiązująca norma dobowa czasu pracy:</span><input type="number" id="hours" step="1" required>godzin<input type="number" id="min" step="1" required>min.</li>
+            </ul>
+            <span><button type="submit">Oblicz</button></span>
+        </form>
+    </div>
+</main>
+<aside>
+    <div class="hidden">
+        <ul>
+            <li>liczba dni urlopu:</li>
+            <li>liczba godzin urlopu:</li>
+        </ul>
+    </div>
+</aside>
+<footer>
+    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
+</footer>
 </body>
 </html>
