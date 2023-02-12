@@ -1,0 +1,22 @@
+main {
+    font-family: 'Calibri', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+ul {
+    list-style: none;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
