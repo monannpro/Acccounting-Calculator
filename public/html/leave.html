@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/ppk_leave/header.css">
     <link rel="stylesheet" href="../css/ppk_leave/main.css">
     <link rel="stylesheet" href="../css/ppk_leave/style.css">
+
+
 </head>
 <body>
 <header>
@@ -23,10 +25,9 @@
     <div>
         <form>
             <ul>
-                <li><span>Okres zatrudnienia w bieżącym roku</span>od:<input type="date" id="from-date" required>do:<input type="date" id="to-date" required></li>
+                <li><span>Okres zatrudnienia w bieżącym roku</span>od:<input type="date" id="start-date" required>do:<input type="date" id="end-date" required></li>
                 <li><span>Wymiar czasu pracy:</span><input type="number" id="num1" step="1"required>/<input type="number" id="num2" step="1"required></li>
                 <li><span>Wymiar roczny urlopu dla pełnego etatu:</span><input type="number" id="days" step="1" required>dni</li>
-                <li><span>Obowiązująca norma dobowa czasu pracy:</span><input type="number" id="hours" step="1" required>godzin<input type="number" id="min" step="1" required>min.</li>
             </ul>
             <span><button type="submit">Oblicz</button></span>
         </form>
@@ -35,14 +36,15 @@
 <aside>
     <div class="hidden">
         <ul>
-            <li>liczba dni urlopu:</li>
-            <li>liczba godzin urlopu:</li>
+            <li id="answer1">liczba dni urlopu:</li>
         </ul>
     </div>
 </aside>
 <footer>
-    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="back"><a href="http://localhost:3000/home"><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
     <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
 </footer>
+
+<script src="../js/leave-front.js"></script>
 </body>
 </html>
