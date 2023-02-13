@@ -9,8 +9,46 @@
     <meta name="creator" content="Monika Prokorym">
     <title>Kalkulator stażu pracy</title>
     <script src="https://kit.fontawesome.com/0d7ba2eb93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/seniority/style.css">
+    <link rel="stylesheet" href="../css/seniority/header.css">
+    <link rel="stylesheet" href="../css/seniority/main.css">
+    <link rel="stylesheet" href="../css/seniority/footer.css">
 </head>
 <body>
-<h1>Kalkulator stażu pracy</h1>
+<header>
+    <p class="title">Kalkulator stażu pracy</p>
+</header>
+<main>
+    <div class="hidden">
+        <ul class="answer">
+            <li>liczba dni urlopu:</li>
+            <li>liczba godzin urlopu:</li>
+        </ul>
+    </div>
+    <div class="calculate-form">
+        <form>
+            <ul>
+                <p>Okres ukończonej nauki (zaznaczyć najwyższy stopień):</p>
+                <li><input type="radio" name="school"><span>zasadnicza lub inna równorzędna szkoła zawodowa, o ile nauka trwała 3 lata,</span></li>
+                <li><input type="radio" name="school"><span>średnia szkoła zawodowa, o ile nauka trwała 5 lat,</span></li>
+                <li><input type="radio" name="school"><span>średnia szkoła zawodowa dla absolwentów zasadniczych (równorzędnych) szkół zawodowych (5 lat),</span></li>
+                <li><input type="radio" name="school"><span>średnia szkoła ogólnokształcąca (4 lata),</span></li>
+                <li><input type="radio" name="school"><span>szkoła policealna (6 lat),</span></li>
+                <li><input type="radio" name="school"><span>szkoła wyższa (8 lat).</span></li>
+                <br>
+                <li><span>Jeżeli okres trwania nauki w pierwszych dwóch przypadkach był niższy, w rubryce obok należy wskazać ten okres:</span><input type="number" id="year" step="1">lata<input type="number" id="months" step="1">miesiące</li>
+                <br>
+                <p>Okresy zatrudnienia na umowę o pracę:</p>
+                <li>od:<input type="date" id="from-date" required>do:<input type="date" id="to-date" required></li>
+                <span class="edit"><button class="add">+ Dodaj kolejny okres</button></span>
+            </ul>
+            <span><button type="submit" class="calculate">Oblicz</button></span>
+        </form>
+    </div>
+</main>
+<footer>
+    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
+</footer>
 </body>
 </html>
