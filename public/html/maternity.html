@@ -9,8 +9,36 @@
     <meta name="creator" content="Monika Prokorym">
     <title>Kalkulator urlopu macierzyńskiego</title>
     <script src="https://kit.fontawesome.com/0d7ba2eb93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/seniority_maternity_calculator/footer.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_calculator/header.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_calculator/main.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_calculator/style.css">
 </head>
 <body>
-<h1>Kalkulator urlopu macierzyńskiego i rodzicielskiego</h1>
+<header>
+    <p class="title">Kalkulator urlopu macierzyńskiego i rodzicielskiego</p>
+</header>
+<main>
+    <div class="hidden">
+        <ul class="answer">
+            <li>Urlop macierzyński lub na warunkach urlopu macierzyńskiego:</li>
+            <li>Urlop rodzicielski:</li>
+            <li>Razem:</li>
+        </ul>
+    </div>
+    <div class="calculate-form">
+        <form>
+            <ul>
+                <li><span>Liczba dzieci urodzonych podczas jednego porodu lub przyjętych jednocześnie na wychowanie:</span><input type="number" id="children" step="1" required></li>
+                <li><span>Data urodzenia * :</span><input type="date" id="birth-date" required></li>
+                <p>* w przypadku przejścia na urlop macierzyński przed przewidywaną datą porodu, wpisać datę rozpoczęcia tego urlopu</p>
+            <span><button type="submit" class="calculate">Oblicz</button></span>
+        </form>
+    </div>
+</main>
+<footer>
+    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
+</footer>
 </body>
 </html>
