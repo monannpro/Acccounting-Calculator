@@ -71,5 +71,10 @@ ul.answer li{
     font-size: 35px;
 }
 
+ul.sickness-reason li{
+    background: none;
+    height: 40px;
+    right: 0;
+}
 
 

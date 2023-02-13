@@ -9,8 +9,43 @@
     <meta name="creator" content="Monika Prokorym">
     <title>Kalkulator wynagrodzenia chorobowego</title>
     <script src="https://kit.fontawesome.com/0d7ba2eb93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/seniority_maternity_sickpay/footer.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_sickpay/header.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_sickpay/main.css">
+    <link rel="stylesheet" href="../css/seniority_maternity_sickpay/style.css">
+
 </head>
 <body>
-<h1>Kalkulator wynagrodzenia chorobowego</h1>
+<header>
+    <p class="title">Kalkulator wynagrodzenia chorobowego</p>
+</header>
+<main>
+    <div class="hidden">
+        <ul class="answer">
+            <li>Wynagrodzenie chorobowe:</li>
+        </ul>
+    </div>
+    <div>
+        <form>
+            <ul>
+                <li><span>Podstawa wymiaru świadczenia:</span><input type="number" id="salary" step="0.01" required>zł</li>
+                <li><span>Liczba dni wynagrodzenia chorobowego:</span><input type="number" id="days" step="1"required>dni</li>
+                <li> <p>Przyczyna nieobecności:</p>
+                    <ul class="sickness-reason">
+                        <li><input type="radio" name="reason"><span>choroba</span></li>
+                        <li><input type="radio" name="reason"><span>choroba przypadająca w okresie ciąży</span></li>
+                        <li><input type="radio" name="reason"><span>wypadek w drodze do pracy lub z pracy</span></li>
+                    </ul>
+                </li>
+                <li><span>Stawka procentowego wynagrodzenia chorobowego:</span><input type="number" id="percent" step="1" required>%</li>
+            </ul>
+            <span><button type="submit" class="calculate">Oblicz</button></span>
+        </form>
+    </div>
+</main>
+<footer>
+    <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
+    <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
+</footer>
 </body>
 </html>
