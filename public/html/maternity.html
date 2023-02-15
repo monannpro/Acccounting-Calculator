@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/seniority_maternity_sickpay/header.css">
     <link rel="stylesheet" href="../css/seniority_maternity_sickpay/main.css">
     <link rel="stylesheet" href="../css/seniority_maternity_sickpay/style.css">
+
 </head>
 <body>
 <header>
@@ -21,9 +22,9 @@
 <main>
     <div class="hidden">
         <ul class="answer">
-            <li>Urlop macierzyński lub na warunkach urlopu macierzyńskiego:</li>
-            <li>Urlop rodzicielski:</li>
-            <li>Razem:</li>
+            <li id="answer1">Urlop macierzyński:</li>
+            <li id="answer2">Urlop rodzicielski:</li>
+            <li id="answer3">Razem:</li>
         </ul>
     </div>
     <div class="calculate-form">
@@ -33,6 +34,7 @@
                 <li><span>Data urodzenia * :</span><input type="date" id="birth-date" required></li>
                 <p>* w przypadku przejścia na urlop macierzyński przed przewidywaną datą porodu, wpisać datę rozpoczęcia tego urlopu</p>
             <span><button type="submit" class="calculate">Oblicz</button></span>
+            </ul>
         </form>
     </div>
 </main>
@@ -40,5 +42,6 @@
     <span class="back"><a href=""><i class="fa-solid fa-arrow-left"></i> wstecz</a></span>
     <span class="edit"><a href="">zmień kryteria obliczeń</a></span>
 </footer>
+<script src="../js/maternity-front.js"></script>
 </body>
 </html>

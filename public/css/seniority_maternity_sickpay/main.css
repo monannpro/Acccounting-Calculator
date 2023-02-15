@@ -77,4 +77,7 @@ ul.sickness-reason li{
     right: 0;
 }
 
+main .hidden {
+    display: none;
+}
 
